@@ -1,0 +1,17 @@
+/CMakeFiles
+CMakeCache.txt
+Makefile
+chud_coin
+cmake_install.cmake
+compiler_commands.json
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pch
+*.pdb
+*.log
