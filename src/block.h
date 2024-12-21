@@ -1,7 +1,8 @@
 #include <vector>
 #include <string>
 
-struct Block {
+class Block {
+public:
     int index;                                      // Block number
     std::string timestamp;                          // Time of creation
     std::vector<std::string> transactions;          // List of transactions
@@ -12,4 +13,5 @@ struct Block {
     Block(int idx, const std::string& prev_hash);
 
     std::string calculate_hash() const;             // Generate hash for this block
+    void add_transaction(const std::string& tx);    // Add a transaction to the block
 };

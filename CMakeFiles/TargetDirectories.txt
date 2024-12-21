@@ -1,0 +1,3 @@
+/Users/nathanblackburn/programming/chudcoin/CMakeFiles/chud_coin.dir
+/Users/nathanblackburn/programming/chudcoin/CMakeFiles/edit_cache.dir
+/Users/nathanblackburn/programming/chudcoin/CMakeFiles/rebuild_cache.dir
