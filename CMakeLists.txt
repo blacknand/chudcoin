@@ -12,4 +12,5 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 # Add the executable
 add_executable(chud_coin
                 src/block.cpp
-                src/main.cpp)
+                src/main.cpp
+                src/utc_data.cpp)
