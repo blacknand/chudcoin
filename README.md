@@ -13,17 +13,14 @@ Nothing ever happens.
 ### CMake build and run on Windows
 - To build:
 
-
-    '''bash
+    ```bash
     cd build
     cmake ..
     cmake --build .
-    '''
-
+    ```
 
 - To run:
 
-
-    '''bash
+    ```bash
     .\Debug\chud_coin.exe
-    '''
+    ```
