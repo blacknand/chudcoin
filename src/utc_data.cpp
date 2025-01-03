@@ -19,9 +19,9 @@ std::string get_utc_time() {
         gmtime_s(&utc_time_struct, &t_c);  // gmtime_s does not return a pointer
         utc_time = &utc_time_struct;
     #endif
-    
+
     std::ostringstream oss;
-    oss << "UTC time: " << 1900 + utc_time->tm_year << "-"
+    oss << 1900 + utc_time->tm_year << "-"
             << 1 + utc_time->tm_mon << "-"
             << utc_time->tm_mday << "T"
             << utc_time->tm_hour << ":"

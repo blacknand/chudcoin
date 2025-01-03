@@ -9,5 +9,5 @@
 Block::Block(int idx, const std::string& prev_hash)
     : index(idx), previous_hash(prev_hash), nonce(0) {
     timestamp = get_utc_time();
-    std::cout << timestamp << std::endl;
+    std::cout << "Block created: " << timestamp << std::endl;
 }
