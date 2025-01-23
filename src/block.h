@@ -12,6 +12,6 @@ public:
 
     Block(int idx, const std::string& prev_hash);
 
-    std::string calculate_hash() const;             // Generate hash for this block
-    void add_transaction(const std::string& tx);    // Add a transaction to the block
+    std::string calculate_hash(const std::string& str) const;             // Generate hash for this block
+    void add_transaction(const std::string& tx);                          // Add a transaction to the block
 };

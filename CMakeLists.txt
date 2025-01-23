@@ -17,8 +17,14 @@ else()
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Wextra -Werror")
 endif()
 
-# Add the executable
+# find_package(OpenSSL REQUIRED OPENSSL_CRYPTO_LIBRARY OPENSSL_SSL_LIBRARY)
+# target_link_libraries(chudcoin OpenSSL::SSL OpenSSL::Crypto)
+
 add_executable(chud_coin
                 src/block.cpp
                 src/main.cpp
                 src/utc_data.cpp)
+
+find_package(OpenSSL REQUIRED)
+target_include_directories(chud_coin PRIVATE ${OPENSSL_INCLUDE_DIR})
+target_link_libraries(chud_coin PRIVATE OpenSSL::SSL OpenSSL::Crypto)
