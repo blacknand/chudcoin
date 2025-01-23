@@ -7,6 +7,7 @@
 #include <iostream>
 #include <iomanip>
 #include <openssl/sha.h>
+#include <sstream>
 
 
 Block::Block(int idx, const std::string& prev_hash)
