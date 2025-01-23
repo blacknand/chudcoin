@@ -21,9 +21,9 @@ endif()
 # target_link_libraries(chudcoin OpenSSL::SSL OpenSSL::Crypto)
 
 add_executable(chud_coin
-                src/block.cpp
-                src/main.cpp
-                src/utc_data.cpp)
+                block.cpp
+                main.cpp
+                utc_data.cpp)
 
 find_package(OpenSSL REQUIRED)
 target_include_directories(chud_coin PRIVATE ${OPENSSL_INCLUDE_DIR})
